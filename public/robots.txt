@@ -1,3 +1,47 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Disallow:
+
+
+   <style>
+      .loading {
+        -webkit-animation: logo-animation 1s ease-in-out;
+        animation: logo-animation 1s ease-in-out;
+        height: 7em;
+        width: 7em;
+      }
+
+      .container {
+        align-items: center;
+        background-color: #ECE4CE;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        width: 100vw;
+        -webkit-animation: container 1500ms 1000ms ease-in-out both;
+        animation: container 1500ms 1000ms ease-in-out both;
+      }
+    
+      @keyframes logo-animation {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0) rotate(360deg);
+
+        }
+        100% {
+          -webkit-transform: scale(1);
+          transform: scale(1) rotate(0deg);
+        }
+      }
+      
+      @keyframes container{
+          0%{
+            -webkit-transform: translateX(0);
+          transform: translateX(0);
+          }
+          100% {
+            -webkit-transform: translateX(-100);
+            transform: translateX(-200%);
+        }
+      }
+    </style>

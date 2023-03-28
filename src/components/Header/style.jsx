@@ -4,52 +4,46 @@ import { colors } from "../../utils/styles/colors";
 export const HeaderMadame = styled.header`
     background-color : ${colors.primary};
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    height: 200px;
-    padding: 2% 3% 0 3%;
+    height: 100vh;
+    // padding: 2% 3% 0 3%;
     position relative;
+    text-align: center;
+    overflow: hidden;
 `
 
-export const GreyCircle = styled.div`
-    border-radius: 100%;
-    background-color: ${colors.tertiary};
-    width: 150px;
-    height: 150px;
-    & h1{
-        margin-top: 0;
-        position: relative;
-        left: 20px;
-
-    }
+export const VideoHeader = styled.video`
+    position: absolute;
+    min-height: 100%;
+    min-width: 115%;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -51%);
+    z-index: 0;
 `
 
 export const LogoHeader = styled.img`
-    width: 110px;
+    width: 150px;
     margin-bottom: 0;
     position: relative;
     top: 20px;
     `
 
-export const NavigationMenu = styled.nav`
-    width: 30%;
-    border: 1px solid black;
+export const NavHeader = styled.nav`
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
 `
 
-export const ItemsNavigationMenu = styled.h2`
-    color: white;
+export const ButtonHeader = styled.button`
+    position: relative;
     background-color: ${colors.secondary};
+    z-index: 2;
     width: 100px;
     height: 50px;
+    margin-right: auto;
     margin-left: auto;
-    text-align: center;
-    border-radius: 50px;
-    transform: scale(1);
-    transition: transform 500ms;
-    &:hover{
-        transform: scale(1.1);
-        transition: transform 500ms;
-    }
+    border-radius: 100% 100% 0 0;
+
 `
