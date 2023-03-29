@@ -7,7 +7,7 @@ export const BurgerMenuWrapper = styled.div`
     width: 100px;
     height: 100px;
     margin: auto;
-    margin-right: 0px;
+    margin-right: 10px;
 `
 
 export const BurgerMenuButton = styled.button`

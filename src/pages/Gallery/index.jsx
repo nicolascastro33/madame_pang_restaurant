@@ -1,21 +1,27 @@
-import { galleryImages } from "../../data/galery"
-import { useEffect } from "react"
-import GalleryCards from "../../components/GalleryCards"
-function Gallery(){
-    useEffect(() => {
-        document.title = "Madame Pang - Gallery"
-    })
-    return(
-        <div>
-            {galleryImages.map((galleryImage, index) => (
-               <GalleryCards
-               title={galleryImage.title}
-               cover={galleryImage.picture}
-               key={`${galleryImage.title}-${index}`}
-               />
-            ))}
-        </div>
-    )
+import { GalleryData } from '../../data/GalleryData'
+import { useEffect } from 'react'
+import {
+  GalleryImages,
+  GalleryWrapper,
+  GalleryText,
+  GalleryTextWrapper,
+} from './style'
+
+function Gallery() {
+  useEffect(() => {
+    document.title = 'Madame Pang - Gallery'
+  })
+  return (
+    <GalleryWrapper>
+      <GalleryTextWrapper>
+        <GalleryText>Gallerie</GalleryText>
+      </GalleryTextWrapper>
+
+      {GalleryData.map((galleryImage, index) => (
+        <GalleryImages src={galleryImage.picture} key={`images-${index}`} />
+      ))}
+    </GalleryWrapper>
+  )
 }
 
 export default Gallery

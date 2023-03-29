@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../utils/styles/colors";
+import { colors } from "../../../utils/styles/colors";
 
 export const HeaderMadame = styled.header`
     background-color : ${colors.primary};
@@ -40,10 +40,12 @@ export const ButtonHeader = styled.button`
     position: relative;
     background-color: ${colors.secondary};
     z-index: 2;
-    width: 100px;
-    height: 50px;
+    width: 90px;
+    height: 30px;
     margin-right: auto;
     margin-left: auto;
-    border-radius: 100% 100% 0 0;
-
+    border-top-left-radius: 90px;
+    border-top-right-radius:90px;
 `
+
+
