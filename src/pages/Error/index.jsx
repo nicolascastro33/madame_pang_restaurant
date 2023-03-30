@@ -1,4 +1,4 @@
-import { ErrorData } from '../../data/ErrorData'
+import { ErrorData } from '../../data/DataImages'
 import { useEffect } from 'react'
 import GalleryCardsError from '../../components/GalleryCardsError'
 import { AllImagesWrapper } from './style.jsx'

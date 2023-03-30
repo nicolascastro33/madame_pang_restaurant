@@ -8,10 +8,23 @@ export const ContactWrapper = styled.div`
     height: 100vh;
 `
 
-export const InputWrapper = styled.input`
+export const TextContactWrapper = styled.div`
+    color: white;
+    & h1{
+        margin: 0;
+    }
+`
+
+export const ContactForEvent = styled.div`
+    display: flex;
+    justify-content: space-around;
+`
+
+export const MenuEventWrapper = styled.div`
+    display: flex;
 `
 
 
-export const TextContactWrapper = styled.div`
-    color: white;
+export const InputWrapper = styled.input`
+    width: 40%;
 `

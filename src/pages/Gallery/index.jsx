@@ -1,4 +1,4 @@
-import { GalleryData } from '../../data/GalleryData'
+import { GalleryData } from '../../data/DataImages'
 import { useEffect } from 'react'
 import {
   GalleryImages,
