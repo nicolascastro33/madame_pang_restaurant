@@ -8,8 +8,22 @@ import BurgerMenu from "../../BurgerMenu"
 
 
 function IsNotHome() {
-
-  return (
+  const pathName = window.location.pathname
+  const transparentHeader = pathName === "/gallery" ? true : false
+  console.log(transparentHeader)
+  if(transparentHeader){
+    return (
+    <HeaderMadame $transparent>
+      <NavHeader>
+        <a href="/">
+          <LogoHeader src={Logo} alt="logo madame pang" />
+        </a>
+        <BurgerMenu/>
+      </NavHeader>       
+    </HeaderMadame>
+    )
+  }
+  return(
     <HeaderMadame>
       <NavHeader>
         <a href="/">
@@ -18,7 +32,8 @@ function IsNotHome() {
         <BurgerMenu/>
       </NavHeader>       
     </HeaderMadame>
-  )
+    )
+  
 }
 
 export default IsNotHome

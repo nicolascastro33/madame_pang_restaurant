@@ -19,8 +19,8 @@ export const AllElementsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin-right: 2%;
-    margin-left: 2%;
+
+    
 
 `
 

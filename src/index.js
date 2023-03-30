@@ -6,7 +6,7 @@ import About from './pages/About'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './pages/Error'
-import Reservation from './pages/Reservation'
+import Contact from './pages/Contact'
 import Gallery from './pages/Gallery'
 import GlobalStyle from './utils/styles/GlobalStyle'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -21,7 +21,7 @@ root.render(
         <Route exact path="/" element={<Home />} />
         <Route exact path="/menu" element={<Menu />} />
         <Route exact path="/about_us" element={<About />} />
-        <Route exact path="/reservation" element={<Reservation />} />
+        <Route exact path="/contact" element={<Contact />} />
         <Route exact path="*" element={<Error />} />
         <Route exact path="/gallery" element={<Gallery />} />
       </Routes>

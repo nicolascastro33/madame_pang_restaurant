@@ -2,17 +2,21 @@ import styled from "styled-components";
 import { colors } from "../../../utils/styles/colors";
 
 export const HeaderMadame = styled.header`
-    background-color : ${colors.primary};
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: ${colors.primary};
     height: 30vh;
-    // padding: 2% 3% 0 3%;
-    position relative;
     text-align: center;
     overflow: hidden;
+    ${(props) =>
+        props.$transparent &&`
+            position: absolute;
+            width: 100%;
+            background-color: unset;
+        `
+    }
 `
-
 export const LogoHeader = styled.img`
     width: 150px;
     margin-bottom: 0;

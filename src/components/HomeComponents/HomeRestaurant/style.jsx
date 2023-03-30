@@ -5,6 +5,7 @@ export const HomeRestaurantWrapper = styled.section`
     width: 100%;
     height: 110vh;
     background-color: ${colors.primary};
+    overflow: hidden;
 `
 
 export const SlidingElements = styled.div`

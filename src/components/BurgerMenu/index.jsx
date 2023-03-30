@@ -10,7 +10,7 @@ import {
 
 function BurgerMenu(){
     const {isOpen, setIsOpen} = useState(false)
-    // const isOpenMenu = isOpen ? "burger-menu-link-open" : "burger-menu-link"
+    const isOpenMenu = isOpen ? "burger-menu-link-open" : "burger-menu-link"
     
     return(
         <BurgerMenuWrapper>
@@ -19,7 +19,7 @@ function BurgerMenu(){
             </BurgerMenuButton>
             <BurgerMenuLinks>
                 {isOpen ? (
-                    <BurgerMenuLink href="/menu" className="link-1">
+                    <BurgerMenuLink href="/menu" className="link-1" >
                         <li></li>
                     </BurgerMenuLink>
                 ) : (
@@ -30,7 +30,7 @@ function BurgerMenu(){
                 {/* <BurgerMenuLink href="/menu" className={isOpen ? "link-1" : "none"}>
                     <li></li>
                 </BurgerMenuLink>
-                <BurgerMenuLink href="/reservation" className={isOpen ? "link-2" : "none"}>
+                <BurgerMenuLink href="/contact" className={isOpen ? "link-2" : "none"}>
                     <li></li>
                 </BurgerMenuLink>
                 <BurgerMenuLink href="/gallery" className={isOpen ? "link-3" : "none"}>

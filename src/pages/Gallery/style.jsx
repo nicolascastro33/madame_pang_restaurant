@@ -9,16 +9,17 @@ export const GalleryImages = styled.img`
 export const GalleryWrapper = styled.div`
     display: flex; 
     flex-direction: column;
-
 `
 export const GalleryTextWrapper = styled.div`
-    border: 10px solid black;
+    border: thick double black;
+    opacity: 0.7;
     width: 200px;
     height: 80px;
     text-align: center;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
     background-color: ${colors.secondary}; 
     display: flex;
     justify-content: center;
