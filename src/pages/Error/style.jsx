@@ -9,4 +9,5 @@ export const AllImagesWrapper = styled.div`
     justify-content: space-between;
     padding-right: 40px;
     padding-left: 40px;
+    padding: 0 40px 100px 40px;
 `

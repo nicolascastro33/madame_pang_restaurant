@@ -9,9 +9,9 @@ import BurgerMenu from "../../BurgerMenu"
 
 function IsNotHome() {
   const pathName = window.location.pathname
-  const transparentHeader = pathName === "/gallery" ? true : false
-  console.log(transparentHeader)
-  if(transparentHeader){
+  const gallery = pathName === "/gallery" ? true : false
+  const menu = pathName === "/menu" ? true : false 
+  if(gallery || menu){
     return (
     <HeaderMadame $transparent>
       <NavHeader>

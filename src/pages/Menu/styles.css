@@ -1,0 +1,63 @@
+.box{
+    height: 100vh;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    z-index: 0;
+}
+
+.black{
+    background-color: black;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
+}
+
+.golden{
+    background-color: gold;
+}
+
+
+.cocktailWrapper{
+    height: 500px;
+    width: 50%;
+    display: flex;
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.presentationMenu{
+    background-color: brown;
+}
+
+.textPresentationMenu{
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.textPresentationMenu h1{
+    font-size: 48px;
+}
+.cocktailImage{
+    margin-right: 20px;
+    min-width: 50%;
+
+}
+
+.cocktailText{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    height: 100%;
+}

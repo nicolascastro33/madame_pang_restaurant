@@ -1,43 +1,25 @@
+import "./styles.css"
 import { useState } from "react"
-import { 
-    BurgerMenuWrapper,
-    BurgerMenuButton,
-    BurgerMenuLink,
-    BurgerMenuLinks,
-    BurgerMenuBar,
-} from "./styles"
+
 
 
 function BurgerMenu(){
     const {isOpen, setIsOpen} = useState(false)
-    const isOpenMenu = isOpen ? "burger-menu-link-open" : "burger-menu-link"
-    
+    const isOpenMenuLink = isOpen ? "burgerLinkOpen" : "noChange"
+    const isOpenMenuButton = isOpen && "burgerBarreOpen"
     return(
-        <BurgerMenuWrapper>
-            <BurgerMenuButton onClick={() => setIsOpen(!isOpen)}>
-                <BurgerMenuBar/>
-            </BurgerMenuButton>
-            <BurgerMenuLinks>
-                {isOpen ? (
-                    <BurgerMenuLink href="/menu" className="link-1" >
-                        <li></li>
-                    </BurgerMenuLink>
-                ) : (
-                    <BurgerMenuLink href="/menu" className="link-1">
-                    <li></li>
-                    </BurgerMenuLink>
-                )}
-                {/* <BurgerMenuLink href="/menu" className={isOpen ? "link-1" : "none"}>
-                    <li></li>
-                </BurgerMenuLink>
-                <BurgerMenuLink href="/contact" className={isOpen ? "link-2" : "none"}>
-                    <li></li>
-                </BurgerMenuLink>
-                <BurgerMenuLink href="/gallery" className={isOpen ? "link-3" : "none"}>
-                    <li></li>
-                </BurgerMenuLink> */}
-            </BurgerMenuLinks>
-        </BurgerMenuWrapper>
+        <div className="burgerWrapper">
+            <button className="burgerWrapperButton" onClick={() =>
+                setIsOpen(!isOpen)
+            }>
+                <span className={`burgerBarre ${isOpenMenuButton}`}></span>
+            </button>
+            <div className="burgerLinksWrapper">
+                <div className={`burgerLink ${isOpenMenuLink}`}>        
+                </div>
+            </div>
+
+        </div>
     )
 }
 

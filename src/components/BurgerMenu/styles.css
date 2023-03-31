@@ -1,0 +1,68 @@
+.burgerWrapper {
+    /* background-color: red;
+    width: 100px;
+    height: 100px; */
+    z-index: 5;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+
+.burgerWrapperButton{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.burgerBarre, .burgerBarre::after, .burgerBarre::before{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+}
+
+.burgerBarre::after, .burgerBarre::before{
+    display: block;
+    content: "";
+}
+
+.burgerBarre::after{
+    transform: translateY(5px);
+}
+
+.burgerBarre::before{
+    transform: translateY(-10px)
+}
+
+/* .burgerBarreOpen{
+    opacity: 0;
+} */
+
+.burgerLinksWrapper{
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 10px;
+}
+
+.burgerLink{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    background-color: red;
+    margin-right: auto;
+    margin-left: auto;
+    z-index: 0;
+    transform: translateX(100px);
+}
+
+.burgerLinkOpen{
+    opacity: 1;
+    z-index: 1;
+}

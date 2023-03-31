@@ -2,9 +2,11 @@ import { colors } from "../../utils/styles/colors";
 import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
-    background-color: ${colors.primary};
     color: white;
     font-size: 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 `
 
 export const MediaWrapper = styled.div`
@@ -19,9 +21,6 @@ export const AllElementsWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     text-align: center;
-
-    
-
 `
 
 export const NoBooking = styled.div`

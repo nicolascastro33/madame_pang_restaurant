@@ -5,7 +5,12 @@ import {
   EventWrapper,
   EventImageWrapper,
   EventImageButton,
+  EventCancelButton,
 } from './styles.jsx'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleXmark } from '@fortawesome/free-solid-svg-icons'
+
+
 
 function MenuEvents({ name, content, picture, priceTT, priceFS, priceSunday }) {
   const [isOpen, setIsOpen] = useState(false)
@@ -18,7 +23,7 @@ function MenuEvents({ name, content, picture, priceTT, priceFS, priceSunday }) {
           <EventImage src={picture} alt="Events Food" />
           <EventImageButton
             onClick={() => {
-              setIsOpen(!isOpen)
+              setIsOpen(true)
             }}
           >
             {name}
@@ -26,6 +31,12 @@ function MenuEvents({ name, content, picture, priceTT, priceFS, priceSunday }) {
         </EventImageWrapper>
 
         <EventTextWrapper>
+          <EventCancelButton $isOpen>
+             <FontAwesomeIcon icon={faCircleXmark} shake onClick={() => {
+              setIsOpen(false)
+            }}/>
+          </EventCancelButton>
+           
           <h2>{name}</h2>
           <ul>
             {content?.map((item, index) => (
@@ -45,7 +56,7 @@ function MenuEvents({ name, content, picture, priceTT, priceFS, priceSunday }) {
         <EventImage src={picture} alt="Events Food" />
         <EventImageButton
           onClick={() => {
-            setIsOpen(!isOpen)
+            setIsOpen(true)
           }}
         >
           {name}
@@ -53,6 +64,11 @@ function MenuEvents({ name, content, picture, priceTT, priceFS, priceSunday }) {
       </EventImageWrapper>
 
       <EventTextWrapper>
+          <EventCancelButton>
+             <FontAwesomeIcon icon={faCircleXmark} shake onClick={() => {
+              setIsOpen(false)
+            }}/>
+          </EventCancelButton>
         <h2>{name}</h2>
         <ul>
           {content?.map((item, index) => (

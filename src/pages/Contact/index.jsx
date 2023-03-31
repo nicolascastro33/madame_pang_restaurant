@@ -1,6 +1,7 @@
-import { ContactForEvent, ContactWrapper, InputWrapper, MenuEventWrapper, TextContactWrapper } from "./styles";
+import { ContactForEvent, ContactWrapper, MenuEventWrapper, TextContactWrapper } from "./styles";
 import { useEffect } from "react";
 import MenuEvents from "../../components/MenuEvents";
+import ContactEvent from "../../components/ContactEvent";
 import { MenuData } from "../../data/MenuData";
 
 function Contact() {
@@ -17,8 +18,7 @@ function Contact() {
         Pour obtenir plus d’informations, contactez nous à travers le formulaire ci-dessous.</p>
       </TextContactWrapper>
       <ContactForEvent>
-        <InputWrapper>
-        </InputWrapper>
+        <ContactEvent/>
         <MenuEventWrapper>
           {SpecialEventsMenu?.map((menu, index) => (
             <MenuEvents

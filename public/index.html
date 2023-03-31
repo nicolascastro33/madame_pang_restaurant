@@ -30,55 +30,9 @@
         Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Madame Pang - restaurant et bar</title>
-      <style>
-      .loading {
-        -webkit-animation: logo-animation 1500ms ease-in-out;
-        animation: logo-animation 1500ms ease-in-out;
-        height: 7em;
-        width: 7em;
-      }
-
-      .container {
-        align-items: center;
-        background-color: #ECE4CE;
-        display: flex;
-        height: 100vh;
-        justify-content: center;
-        width: 100vw;
-        -webkit-animation: container 2000ms 1500ms ease-in-out both;
-        animation: container 2000ms 1500ms ease-in-out both;
-        z-index: 100;
-        position: fixed;
-      }
-      
-      @keyframes logo-animation {
-        0% {
-          -webkit-transform: scale(0);
-          transform: scale(0) rotate(360deg);
-
-        }
-        100% {
-          -webkit-transform: scale(1);
-          transform: scale(1) rotate(0deg);
-        }
-      }
-      
-      @keyframes container{
-          0%{
-            -webkit-transform: translateX(0);
-          transform: translateX(0);
-          }
-          100% {
-            -webkit-transform: translateX(-100);
-            transform: translateX(-200%);
-        }
-      }
-    </style>
+     
   </head>
   <body> 
-    <div id="spinner" class="container">
-      <img src="./logoDragon.png" class="loading"></div>
-    </div>
     <div id="root"></div>
   </body>
 </html>

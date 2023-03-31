@@ -10,6 +10,7 @@ import BurgerMenu from "../../BurgerMenu"
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import video from "../../../data/video/video-madame-pang.mp4"
+import LoadinPage from "../../LoadingPage"
 
 
 
@@ -17,6 +18,7 @@ function IsHome() {
 
   return (
     <HeaderMadame>
+      <LoadinPage/>
       <VideoHeader src={video} autoPlay={true} loop="infinite" muted={true}/>
       <NavHeader>
         <a href="/">

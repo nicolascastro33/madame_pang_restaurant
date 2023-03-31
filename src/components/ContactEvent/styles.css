@@ -1,0 +1,40 @@
+.formEvent{
+    width: 40%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2% 0 2%;
+    height: 500px;
+}
+
+.formEventQuestion{
+    margin: 0;
+    width: 90%;
+}
+
+.menuEventSelect{
+    margin-left: 10px;
+}
+
+.formEventShare{
+    width: 40%;
+}
+
+.formEventQuestionShare{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.inputEvent{
+    width: 100%;
+    border-radius: 20px;
+    border: thick double black;
+}
+
+.inputEvent:focus{
+    outline: none;
+}

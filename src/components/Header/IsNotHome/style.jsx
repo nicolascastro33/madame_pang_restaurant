@@ -9,6 +9,7 @@ export const HeaderMadame = styled.header`
     height: 30vh;
     text-align: center;
     overflow: hidden;
+    z-index: 2;
     ${(props) =>
         props.$transparent &&`
             position: absolute;
